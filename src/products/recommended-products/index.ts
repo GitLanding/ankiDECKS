@@ -1,1 +1,1 @@
-export * from './recommended-product
+export * from './recommended-products.controller';
