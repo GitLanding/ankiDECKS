@@ -8,4 +8,7 @@ export class CurrentProductsController {
 	constructor(private readonly service: ProductsService) {}
 
 	@Post()
-	get
+	getRecommendedProduct(@Body() body: {pn: string}): CurrentProduct {
+		return this.service.getCurrentProducts(body.pn);
+	}
+}
