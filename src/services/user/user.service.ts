@@ -8,4 +8,18 @@ import { InjectRepository } from '@nestjs/typeorm';
 export class UserService {
 	// constructor(@InjectRepository(User) private usersRepository: Repository<User>) { }
 
-	// login(id: number)
+	// login(id: number): Promise<User[]> {
+	// 	return this.usersRepository.find({
+	// 		select: ['fullName', 'birthday', 'isActive'],
+	// 		where: [{ id }],
+	// 	});
+	// }
+
+	logout(): boolean {
+		return true;
+	}
+
+	signUp(): boolean {
+		return true;
+	}
+}
